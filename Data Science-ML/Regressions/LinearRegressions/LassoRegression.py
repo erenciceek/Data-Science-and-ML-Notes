@@ -28,16 +28,17 @@ import os
 os.getcwd()
 
 # VERİNİN HAZIRLANIŞI VE TRAIN,TEST DİZİLERİNİN OLUŞTURULMASI
-hit = pd.read_csv("../Hitters.csv")
+hit = pd.read_csv("Data Science-ML/Regressions/Hitters.csv")
 df = hit.copy()
 df = df.dropna()
+df.head()
 dms = pd.get_dummies(df[['League', 'Division', 'NewLeague']])
 y = df["Salary"]
 X_ = df.drop(['Salary','League','Division','NewLeague'], axis=1).astype('float64')
 X = pd.concat([X_, dms[['League_N','Division_W','NewLeague_N']]], axis=1)
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.25,random_state=42)
 
-from sklearn.linear_model import Lasso,
+from sklearn.linear_model import Lasso
 import matplotlib.pyplot as plt
 
 lasso_model = Lasso(alpha=0.1).fit(X_train,y_train)
