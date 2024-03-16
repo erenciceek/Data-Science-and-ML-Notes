@@ -108,4 +108,13 @@ np.sqrt(mean_squared_error(y_test,y_pred))
 
 
 
+"""
+              NEURAL NETWORKS
 
+A NN is a machine learning approach inspired by the way in which brain performs a particular learning task:
+
+--> Knowledge about the learning task is given in the form of examples
+--> Inter neuron connection strengths(weights) are used to store the acquired information (the training examples)
+--> During the learning process the weights are modified in order to particular learning task correctly on the training examples.
+ 
+"""
