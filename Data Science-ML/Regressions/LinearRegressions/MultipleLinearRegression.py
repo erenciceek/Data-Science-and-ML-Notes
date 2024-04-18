@@ -141,7 +141,8 @@ Bu, modeldeki en az bir bağımsız değişkenin bağımlı değişken üzerinde
 F istatistiği küçük ve ilgili p-değeri büyükse: Modelin anlamlı olmadığı ve bağımsız değişkenlerin bağımlı değişken üzerindeki etkisinin 
 istatistiksel olarak önemli olmadığı sonucuna varılır.
 R-kare ve F istatistiği birlikte, modelin verileri ne kadar iyi açıkladığını ve modelin anlamlılığını değerlendirmek için kullanılır.
-Ancak, bu istatistiklerin sınırlılıklarının farkında olmak önemlidir. Örneğin, R-kare değeri, modelin doğruluğunu veya tahmin edici değişkenlerin bireysel önemini değil, sadece modelin açıkladığı varyans oranını ölçer. Benzer şekilde, F istatistiği modelin genel anlamlılığını değerlendirir, ancak bireysel değişkenlerin önemini doğrudan test etmez.
+Ancak, bu istatistiklerin sınırlılıklarının farkında olmak önemlidir. Örneğin, R-kare değeri, modelin doğruluğunu veya tahmin edici değişkenlerin bireysel önemini değil, sadece modelin açıkladığı varyans oranını ölçer. 
+Benzer şekilde, F istatistiği modelin genel anlamlılığını değerlendirir, ancak bireysel değişkenlerin önemini doğrudan test etmez.
 """
 
 
