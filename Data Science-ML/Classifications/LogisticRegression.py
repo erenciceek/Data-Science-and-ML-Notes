@@ -38,7 +38,6 @@ from sklearn.preprocessing import scale
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn.metrics import roc_auc_score,roc_curve
-import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 
 
@@ -125,7 +124,15 @@ accuracy_score(y_test,loj_model.predict(X_test))
 
 cross_val_score(loj_model,X_test,y_test,cv = 10).mean()
 
+"""
+Çapraz Doğrulama (Cross-Validation) ile Puan Hesaplama: cross_val_score fonksiyonu, modelin performansını k-fold çapraz doğrulama kullanarak değerlendiriyor. 
+cv=10 parametresi, 10 katlı çapraz doğrulamanın kullanılacağını gösterir. Bu, veri setinin 10 eşit parçaya bölünüp her bir parçanın sırayla test seti olarak 
+kullanılacağı ve geri kalanın eğitim seti olarak kullanılacağı anlamına gelir. Her bir katlama için doğruluk skoru hesaplanır ve .mean() fonksiyonu ile bu 
+skorların ortalaması alınır.
 
+Bu adımlar, lojistik regresyon modelinin hem bağımsız bir test setindeki performansını hem de k-fold çapraz doğrulama yoluyla genelleştirme yeteneğini değerlendirmek 
+için kullanılır. Doğruluk puanı ve çapraz doğrulama skoru, modelin farklı veri alt kümeleri üzerindeki tutarlılığını ve güvenilirliğini gösterir.
+"""
 
 
 
