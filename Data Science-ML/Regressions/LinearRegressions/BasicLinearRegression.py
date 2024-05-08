@@ -1,5 +1,4 @@
 # Temel amaç, bağımlı ve bağımsız değişken arasındaki ilişkiyi ifade eden doğrusal fonksiyonu bulmaktır.
-import numpy as np
 import pandas as pd
 ad = pd.read_csv("../Advertising.csv")
 df = ad.copy()

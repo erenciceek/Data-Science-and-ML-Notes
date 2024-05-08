@@ -30,11 +30,10 @@ ayarlaması önemli olduğundan, doğru bir model elde etmek için çapraz doğr
 """
 
 
-import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
-import matplotlib.pyplot as plt
+
 
 
 diabetes = pd.read_csv("Data Science-ML/Classifications/diabetes.csv")

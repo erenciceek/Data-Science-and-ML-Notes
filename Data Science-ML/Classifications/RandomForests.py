@@ -33,7 +33,7 @@ Random Forests, sınıflandırma ve regresyon problemlerinin çözümünde sık�
 """
 
 
-import numpy as np
+
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report

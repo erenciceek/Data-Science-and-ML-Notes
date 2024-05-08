@@ -36,10 +36,7 @@ filterwarnings('ignore')
 
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-import spicy as sp
-import mpl_toolkits
 
 
 

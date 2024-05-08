@@ -3,10 +3,7 @@ import findspark
 findspark.init("C:\\spark")
 
 # Konfigürasyon ve Spark Bağlantısı
-
 from pyspark.sql import SparkSession
-from pyspark.conf import SparkConf
-from pyspark import SparkContext
 
 spark = SparkSession.builder \
     .master("local") \

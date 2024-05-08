@@ -23,17 +23,11 @@ gerek olmaması ve değişik küme sayıları ile esneklik sunması nedeniyle te
 alabilir ve bu yüzden genellikle orta veya küçük ölçekli veri setleri için tercih edilir.
 """
 
-
 from warnings import filterwarnings
 filterwarnings('ignore')
 
-import numpy as np
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-import spicy as sp
-import mpl_toolkits
-
 
 
 # Veri işleme ve görselleştirme

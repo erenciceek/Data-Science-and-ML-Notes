@@ -1,9 +1,8 @@
-from textblob import TextBlob
-from sklearn import model_selection, preprocessing, linear_model, naive_bayes, metrics
+from sklearn import model_selection, preprocessing, linear_model, naive_bayes
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn import decomposition, ensemble
+from sklearn import ensemble
 
-import xgboost, numpy, textblob, string
+import xgboost
 
 
 
